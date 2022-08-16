@@ -68,7 +68,7 @@ pub struct SpiTupleTable {
     status_code: SpiOk,
     table: *mut pg_sys::SPITupleTable,
     size: usize,
-    tupdesc: Option<pg_sys::TupleDesc>,
+    pub tupdesc: Option<pg_sys::TupleDesc>,
     current: isize,
 }
 
